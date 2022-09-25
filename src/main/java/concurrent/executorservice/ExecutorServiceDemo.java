@@ -2,8 +2,7 @@ package concurrent.executorservice;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import java.util.concurrent.*;
 
 public class ExecutorServiceDemo {
 
@@ -38,7 +37,46 @@ public class ExecutorServiceDemo {
         }
     }
 
+    @Test
+    void testConstructorExecutorService() {
+        //custom service
+        ExecutorService service = new ThreadPoolExecutor(10, 100, 120, TimeUnit.SECONDS, new ArrayBlockingQueue<>(300));
 
+        try {
+            service.execute(new Task());
+        } catch (RejectedExecutionException exception) {
+            System.err.println("task rejected " + exception.getMessage());
+        }
+
+    }
+
+
+}
+
+/*
+自定义的队列插入错误处理器，可以实现一些logging
+ */
+class CustomRejectionHandler implements RejectedExecutionHandler {
+
+    /**
+     * Method that may be invoked by a {@link ThreadPoolExecutor} when
+     * {@link ThreadPoolExecutor#execute execute} cannot accept a
+     * task.  This may occur when no more threads or queue slots are
+     * available because their bounds would be exceeded, or upon
+     * shutdown of the Executor.
+     *
+     * <p>In the absence of other alternatives, the method may throw
+     * an unchecked {@link RejectedExecutionException}, which will be
+     * propagated to the caller of {@code execute}.
+     *
+     * @param r        the runnable task requested to be executed
+     * @param executor the executor attempting to execute this task
+     * @throws RejectedExecutionException if there is no remedy
+     */
+    @Override
+    public void rejectedExecution(Runnable r, ThreadPoolExecutor executor) {
+        //logging
+    }
 }
 
 class Task implements Runnable {

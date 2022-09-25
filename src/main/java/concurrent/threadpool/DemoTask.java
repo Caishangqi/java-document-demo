@@ -1,4 +1,4 @@
-package concurrent.typesthreadpool;
+package concurrent.threadpool;
 
 public class DemoTask implements Runnable{
     /**

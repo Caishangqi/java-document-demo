@@ -1,4 +1,4 @@
-package concurrent.typesthreadpool;
+package concurrent.threadpool;
 
 import org.junit.jupiter.api.Test;
 
