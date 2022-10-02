@@ -15,12 +15,15 @@
 
 ## 介绍
 
-This library shows **Java advanced features** rather than basic content. You **must** learn basic content to understand what advanced content expresses. The layout **order of advanced content** is based on the author's learning path. Do not blindly follow the module order.
+This library shows **Java advanced features** rather than basic content. You **must** learn basic content to understand
+what advanced content expresses. The layout **order of advanced content** is based on the author's learning path. Do not
+blindly follow the module order.
 
 ## 模块
 
-| Java [Concurrent](https://github.com/Caishangqi/java-document-demo/tree/master/src/main/java/concurrent) |
-|----------------------------------------------------------------------------------------------------------|
+| **Java** [**Concurrent**](https://github.com/Caishangqi/java-document-demo/tree/master/src/main/java/concurrent) |
+|------------------------------------------------------------------------------------------------------------------|
+| **Java** [**Generics**](https://github.com/Caishangqi/java-document-demo/tree/master/src/main/java/generics)     |
 
 ## 说明
 
