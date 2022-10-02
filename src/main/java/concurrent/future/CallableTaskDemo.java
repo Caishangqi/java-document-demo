@@ -31,7 +31,7 @@ public class CallableTaskDemo {
         //Returns true if task was cancelled
         future.isCancelled();
 
-        //Return true is task is completed (successfully or otherwise
+        //Return true is task is completed (successfully or otherwise)
         future.isDone();
 
         //if finish in 1 sec, your future is not ready
