@@ -24,7 +24,7 @@ public class CompletableFutureDemo {
         int baseNumber = 10;
 
         CompletableFuture<Integer> integerCompletableFuture = CompletableFuture.supplyAsync(() -> getRandom(0), cpuBound)
-                .thenApply(result -> getRandom(result)); //把上个方法的结果 result 传入这个内
+                .thenApply(this::getRandom); //把上个方法的结果 result 传入这个内
 
         try {
             Integer integer = integerCompletableFuture.get();
