@@ -24,6 +24,8 @@ blindly follow the module order.
 | **Java** [**Concurrent**](https://github.com/Caishangqi/java-document-demo/tree/master/src/main/java/concurrent) |
 |------------------------------------------------------------------------------------------------------------------|
 | **Java** [**Generics**](https://github.com/Caishangqi/java-document-demo/tree/master/src/main/java/generics)     |
+| **Java** [**Lambda**](https://github.com/Caishangqi/java-document-demo/tree/master/src/main/java/lambda)         |
+| **Java** [**StreamAPI**](https://github.com/Caishangqi/java-document-demo/tree/master/src/main/java/streams)     |
 
 ## 说明
 
